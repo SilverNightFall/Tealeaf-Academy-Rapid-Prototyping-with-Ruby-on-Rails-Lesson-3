@@ -1,0 +1,10 @@
+<div class="row">
+<% header = link_to('All Posts', posts_path) + " &raquo; Categories".html_safe %>
+<%= render 'shared/content_title', title: header %>
+  <div class="span8 well">
+  <ul>
+<% @categories.each do |category| %>
+  <li class="list"><span class="category-list"><%= category.name %></span><%= link_to 'Edit', edit_category_path(category)  %></li>
+<% end %>
+</ul>
+</div></div>

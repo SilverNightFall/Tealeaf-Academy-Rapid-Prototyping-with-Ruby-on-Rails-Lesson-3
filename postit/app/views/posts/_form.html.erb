@@ -1,0 +1,28 @@
+<div class="row">
+  <%= render 'shared/errors', obj: @post %>
+  <%= form_for @post do |f| %>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, size: 58 %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url, size: 58 %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, :size => "60x7" %>
+  </div>
+  <div class="field">
+  <%= f.label "Categories" %>
+  </div>
+<div class="checkbox field">
+  <%= f.collection_check_boxes :category_ids, Category.all, :id, :name, :checked => "3"  do |checkbox| %>
+    <% checkbox.label(class: "checkbox_inline") {checkbox.check_box(class: "checkbox") + checkbox.text} %>
+  <% end %>
+  </div>
+  <div class="actions">
+  <%= f.submit "#{@post.new_record? ? 'New' : 'Update'}", class: 'myButton' %>
+  </div>
+<% end %>
+</div>

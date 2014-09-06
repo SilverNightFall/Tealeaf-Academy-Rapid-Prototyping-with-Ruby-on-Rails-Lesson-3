@@ -1,0 +1,324 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ *= require bootstrap
+*/
+
+
+header {
+  display: inline-block;
+  position: relative;
+}
+li span.category-list {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+li.list {
+    padding-left: 1em;
+    text-indent: -.7em;
+    text-align: left;
+}
+
+li.list:before {
+    content: "■ ";
+    color: #ee5b88;
+}
+
+span.post-content {
+  vertical-align: middle;
+}
+
+.post-content.p {
+  text-align: right;
+}
+
+
+
+a#logo {
+  position: relative;
+  top: -60px;
+  z-index: 9999;
+  width: 180px;
+  height: 176px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.nav>li, .btn-group > .btn, .btn-group-vertical > .btn, .dropdown-menu {
+  font-weight: bold;
+  font-size: 20px !important;
+  letter-spacing: 2px !important;
+  outline-color: #65BFD7 !important;
+  text-align: center !important;
+  margin-right: 20px !important;
+  float: left !important;
+  outline-style: ridge !important;
+}
+.btn-group > .btn, .btn-group-vertical > .btn:hover {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  outline-color: #65BFD7;
+  text-align: center;
+  margin-right: 20px;
+  float: left;
+  outline-style: ridge !important;
+  border-radius: 0 !important;
+  }
+
+.nav>li>a, .btn-group > .btn, .btn-group-vertical > .btn, nav .open > a, .dropdown-menu, .dropdown-menu > li > a  {
+  background-color: #F1D96F !important;
+  color: #ffffff !important;
+    font-size: 20px !important;
+    padding: 9px 15px;
+      border-radius: 0 !important;
+}
+ul.nav>li>a:hover,  ul.nav>li>a:focus {
+    background-color: #B8D98A !important;
+  color: #ffffff !important;
+  font-size: 20px;
+}
+.nav .open > a:hover, .nav .open > a:focus, .btn-group > .btn:first-child:hover , .btn-group > .btn:first-child:focus {
+  background-color: #B8D98A !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+   font-weight: bold !important;
+  letter-spacing: 2px !important;
+  text-align: center !important;
+  margin-right: 20px !important;
+  float: left !important;
+  border-color: #65BFD7 !important;
+  outline-style: ridge !important;
+   border: 2px solid;
+   border-radius: 0 !important;
+
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #B8D98A !important;
+  color: #ffffff !important;
+  outline-style: ridge !important;
+   border-top: 2px solid;
+   border-bottom: 2px solid;
+   border-radius: 0 !important;
+
+}
+
+.dropdown-menu .divider {
+  background-color: #b5729e !important;
+  height: 3px !important;
+}
+
+.glyphicon-plus, .glyphicon-th-large {
+  color: #ee5b88 !important;
+}
+
+
+
+div .post-container {
+  display: inline-block;
+  font-size: 10px;
+  float: right;
+  clear: right;
+}
+
+.glyphicon {
+margin-top: 5px;
+margin-bottom: 10px;
+font-size: 50px  !important;
+}
+
+ul.nav {
+  padding-left: 210px;
+}
+
+.navbar-default {
+  background : #B5729E !important;
+  width: 100%;
+  padding-bottom: 2px !important;
+}
+
+div.span8.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #FCF7E2;
+  border: 2px solid #E0F2F7;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
+  width: 70%;
+}
+
+.myButton {
+margin-top: 10px;
+  -moz-box-shadow: 0px 10px 14px -7px #b5729e;
+  -webkit-box-shadow: 0px 10px 14px -7px #b5729e;
+  box-shadow: 0px 5px 7px -2px #b5729e;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #65bed7), color-stop(1, #b8d98a));
+  background:-moz-linear-gradient(top, #65bed7 5%, #b8d98a 100%);
+  background:-webkit-linear-gradient(top, #65bed7 5%, #b8d98a 100%);
+  background:-o-linear-gradient(top, #65bed7 5%, #b8d98a 100%);
+  background:-ms-linear-gradient(top, #65bed7 5%, #b8d98a 100%);
+  background:linear-gradient(to bottom, #65bed7 5%, #b8d98a 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#65bed7', endColorstr='#b8d98a',GradientType=0);
+  background-color:#65bed7;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size: 15px;
+  font-weight:bold;
+  padding: 4px 5px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ee5b87;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b8d98a), color-stop(1, #65bed7));
+  background:-moz-linear-gradient(top, #b8d98a 5%, #65bed7 100%);
+  background:-webkit-linear-gradient(top, #b8d98a 5%, #65bed7 100%);
+  background:-o-linear-gradient(top, #b8d98a 5%, #65bed7 100%);
+  background:-ms-linear-gradient(top, #b8d98a 5%, #65bed7 100%);
+  background:linear-gradient(to bottom, #b8d98a 5%, #65bed7 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8d98a', endColorstr='#65bed7',GradientType=0);
+  background-color:#b8d98a;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+form {
+  display: inline-block;
+}
+
+.row.form {
+  text-align: center;
+}
+
+.arrow {
+  margin-left: -90px;
+}
+
+.alert-success {
+  color: #EAF4DC;
+}
+
+.span-8.well div.post_meta{
+  display: inline-block;
+}
+
+div.post_meta{
+  text-align: right;
+  }
+
+.span12 {
+  width: 100%;
+}
+
+a {
+color: #65bfd7 !important;
+text-decoration: none !important;
+}
+
+a:hover {
+    color: #b5729e !important;
+    text-decoration: none !important;
+}
+
+.badge {
+  color: #b5729e !important;
+  background-color: #ffffff !important;
+  border: 2px solid #E0F2F7;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+p {
+  display: block;
+-webkit-margin-before: 1em !important;
+-webkit-margin-after: 1em !important;
+-webkit-margin-start: 0px !important;
+-webkit-margin-end: 0px !important;
+}
+
+.comment_body.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #F1F7E8;
+  border: 2px solid #E0F2F7;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+
+.more {
+  font-weight: bold;
+}
+
+.message-error {
+  margin-top: 20px;
+  color: #772E44;
+background-color: #FDEFF3;
+padding: 15px;
+margin-bottom: 20px;
+border: 3px solid transparent;
+border-radius: 4px;
+}
+
+.message-success {
+    margin-top: 20px;
+background-color: #F8FBF3;
+color: #4A5737;
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
+div.meta {
+  float:right;
+}
+
+div.post-body {
+  padding-bottom: 20px;
+}
+
+label.checkbox_inline {
+  padding-right: 10px;
+}
+
+input.checkbox {
+  position: relative;
+  top: -4px;
+}
+
+div.actions {
+  padding-bottom: 20px;
+}

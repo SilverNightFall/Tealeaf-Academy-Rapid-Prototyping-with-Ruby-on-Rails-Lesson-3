@@ -1,0 +1,12 @@
+<div class="row">
+  <%= render 'shared/errors', obj: @category %>
+
+  <%= form_for @category do |f| %>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, size: 58 %>
+  </div>
+  <div class="actions">
+  <%= f.submit "#{@category.new_record? ? 'New' : 'Update'}", class: 'myButton' %>
+  </div>
+<% end %>

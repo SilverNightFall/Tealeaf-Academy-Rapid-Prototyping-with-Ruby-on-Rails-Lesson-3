@@ -1,0 +1,31 @@
+<div class="row">
+  <ul>
+    <div class="span8 well">
+      <%= render post.categories %>
+      <span class="post-content">
+        <h2>
+          <%= link_to post.title, fix_url(post.url) %>
+        </h2>
+        <p>
+          <%= post.description %>
+        </p>
+      </span>
+      <div class="post_meta">
+        Posted by: <%= post.user.username %>
+        <br />
+        <span class="small">
+          Created on: <%= show_datetime(post.created_at)  %>
+        </span>
+        <br />
+        <span>
+          <%= link_to"#{post.comments.size} comments", post_path(post), class: 'comment' %>
+        </span>
+        <br />
+        <span class="small">
+        <%= link_to image_tag("/assets/pencil.png") + "Edit Post" , edit_post_path(post) , class: 'pencil' %>
+          <br />
+        </span>
+      </div>
+    </div>
+  </ul>
+</div>

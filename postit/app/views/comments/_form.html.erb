@@ -1,0 +1,14 @@
+
+<div class="row">
+</div>
+  <div class="row">
+    <%= render 'shared/errors', obj: @comment %>
+    <%=  form_for [@post, @comment] do |f| %>
+    <div class="field">
+      <%= f.text_area :body, :size => "60x7" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "#{@comment.new_record? ? 'New' : 'Update'}", class: 'myButton' %> <%= link_to image_tag("/assets/postit.png"), @post, class: 'postit' %>
+    <% end %>
+  </div>
+</div>
